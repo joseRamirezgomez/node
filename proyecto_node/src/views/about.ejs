@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/head.ejs') %>
+    <title><%= title%></title>
+</head>
+<body>
+    <%- include ('partials/navigation.ejs') %>
+    <main class="container vh-100 pt-2 text-center d-flex justify-content-center align-items-center">
+    <section>
+        <h1 class="display-1 d-flex justify-content-center">About</h1>
+        <p class="d-flex justify-content-center">
+            desde el servidor donde se encuentra alojado el sitio. Sin embargo, si el servidor está lejos
+geográficamente del usuario, puede haber demoras en la carga de esos archivos, lo que puede
+afectar el rendimiento y la experiencia del usuario.
+Aquí es donde entra en juego un CDN. Un CDN consiste en varios servidores distribuidos en
+diferentes ubicaciones estratégicas en todo el mundo. Estos servidores almacenan en caché los
+archivos estáticos del sitio web, creando copias de los mismos en cada uno de ellos.
+Cuando un usuario solicita cargar una página de un sitio web que utiliza un CDN, la solicitud se
+envía al servidor CDN más cercano geográficamente. En lugar de tener que viajar hasta el
+servidor de origen del sitio web, el servidor CDN entrega los archivos almacenados en caché
+directamente al usuario. Esto reduce la latencia y mejora la velocidad de carga de los archivos,
+lo que resulta en una mejor experiencia de usuario.
+Además de la entrega rápida de archivos, los CDNs también pueden ayudar a aliviar la carga de
+tráfico en el servidor de origen, ya que los servidores CDN se encargan de manejar una parte
+significativa de las solicitudes de archivos estáticos.
+        </p>
+    </section>
+</main>
+ 
+</body>
+</html>
