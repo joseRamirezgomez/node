@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include ('partials/head.ejs') %>
-    <title><%=title%></title>
+        <title>
+            <%=title%>
+        </title>
 </head>
+
 <body>
     <%- include ('partials/navigation.ejs')%>
-    <main class="container vh-100 pt-2 text-center d-flex justify-content-center align-items-center">
-    <section>
-        <h1 class="display-1 d-flex justify-content-center">About</h1>
-        <p class="d-flex justify-content-center">
-            desde el servidor donde se encuentra alojado el sitio. Sin embargo, si el servidor está lejos
-geográficamente del usuario, puede haber demoras en la carga de esos archivos, lo que puede
-afectar el rendimiento y la experiencia del usuario.
-Aquí es donde entra en juego un CDN. Un CDN consiste en varios servidores distribuidos en
-diferentes ubicaciones estratégicas en todo el mundo. Estos servidores almacenan en caché los
-archivos estáticos del sitio web, creando copias de los mismos en cada uno de ellos.
-Cuando un usuario solicita cargar una página de un sitio web que utiliza un CDN, la solicitud se
-envía al servidor CDN más cercano geográficamente. En lugar de tener que viajar hasta el
-servidor de origen del sitio web, el servidor CDN entrega los archivos almacenados en caché
-directamente al usuario. Esto reduce la latencia y mejora la velocidad de carga de los archivos,
-lo que resulta en una mejor experiencia de usuario.
-Además de la entrega rápida de archivos, los CDNs también pueden ayudar a aliviar la carga de
-tráfico en el servidor de origen, ya que los servidores CDN se encargan de manejar una parte
-significativa de las solicitudes de archivos estáticos.
-        </p>
-    </section>
-</main>
-<%- include ('partials/footer') %>
+        <main class="container vh-100 pt-2 text-center d-flex justify-content-center align-items-center" style="margin-top: 3rem;">
+            <section>
+                <h1 class="display-1 d-flex justify-content-center" style="margin-top: 3rem;">Quiénes somos</h1>
+                <p class="d-flex justify-content-center"
+                    style="min-width: 450px; max-width: 900px; text-align: justify;">
+                    Somos One Infity Code, una empresa líder en soluciones tecnológicas innovadoras. Nuestro equipo
+                    está compuesto por expertos apasionados por la tecnología, comprometidos en ofrecer resultados
+                    excepcionales
+                    a nuestros clientes. Nos enfocamos en impulsar el crecimiento y la transformación digital de las
+                    empresas a través de soluciones personalizadas y vanguardistas. Con una combinación de experiencia y
+                    creatividad, estamos listos para ayudarte a alcanzar tus objetivos tecnológicos y destacar en un
+                    mundo digital en constante evolución.
+                </p>
+                <div class="container-text">
+                    <div class="mision" style="min-width: 70vh; max-width: 120vh; text-align: justify;">
+                        <p class="p-3">
+                            Nuestra misión es ofrecer soluciones tecnológicas innovadoras que impulsen el
+                            crecimiento y la transformación digital de nuestros clientes. Nos comprometemos
+                            a brindar productos y servicios de calidad que satisfagan las necesidades de manera efectiva
+                            y
+                            eficiente.
+                        </p>
+                        <div class="visionimg" style="display: flex; flex-direction: column;">
+                            <h2 class="display-1 d-flex justify-content-center" style="font-size: 3em;">Misión</h2>
+                            <img src="img/mision.png" alt="" style="min-width: 100px; max-width: 400px;">
+                        </div>
+                    </div>
+                    <div class="vision" style="min-width: 70vh; max-width: 120vh; text-align: justify;">
+                        <div class="misionimg p-3">
+                            <h2 class="display-1 d-flex justify-content-center" style="font-size: 3em;">Visión</h2>
+                            <img src="img/vision.png" alt="" style="min-width: 100px; max-width: 400px;">
+                        </div>
+                        <p>Ser reconocidos como líderes en el sector tecnológico, destacando por nuestra excelencia
+                            en la entrega de soluciones personalizadas y nuestra capacidad para adaptarnos y abrazar
+                            las últimas tendencias tecnológicas. Aspiramos a establecer relaciones duraderas con
+                            nuestros
+                            clientes, basadas en la confianza y el éxito mutuo.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <%- include ('partials/footer') %>
 </body>
+
 </html>

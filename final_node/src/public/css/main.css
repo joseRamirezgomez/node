@@ -1,7 +1,56 @@
 body {
-    background: #202020;
+    background: linear-gradient(
+        to top,
+        rgba(30, 35, 39, 0.915),
+        rgba(30, 35, 38, 0.903)
+      ),url(../img/fondo.png) no-repeat center center;
+      
+    background-size: cover;
     color: white;
 }
+
+footer {
+    background: linear-gradient(rgba(24, 23, 23, 0.377), rgba(56, 54, 54, 0.354));
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .card{
-    background: linear-gradient();
+    color: white;
+    background: linear-gradient(rgba(24, 23, 23, 0.377), rgba(56, 54, 54, 0.354));
+}
+
+.mision, .vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    height: 500px;
+    
+}
+.carousel-item a{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(rgba(29, 28, 28, 0.673), rgba(44, 42, 42, 0.468));
+    font-size: 2em;
+    width: 600px;
+    text-align: center;
+    border-radius: 15px;
+}
+.dropdown-menu li.drp a {
+    color: white;
+}
+
+.dropdown-menu li.drp a:hover {
+    background-color: #333; 
+}
+
+.dropdown-menu li.drp a:focus {
+    background-color: #555;
+}
+.container-port li{
+    margin-top: 10px;
 }
