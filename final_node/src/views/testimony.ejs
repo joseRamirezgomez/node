@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include ('partials/head.ejs')%>
-    <title><%=title %></title>
+        <link rel="icon" href="/img/logo.png" type="image/x-icon">
+        <title>
+            <%=title %>
+        </title>
 </head>
+
 <body>
     <%- include ('partials/navigation.ejs')%>
-
-    <%- include ('partials/footer') %>
+        <section class="container-testimony"
+            style="display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 3rem;">
+            <div class="servtext" style="min-width: 70vh; max-width: 120vh; text-align: justify;">
+                <h2 class="display-1 d-flex justify-content-center" style="font-size: 3em;">Testimonios de clientes</h2>
+                <p class="p-3">
+                    Nuestros clientes han experimentado los beneficios de trabajar
+                    con One Infinity Code. Aquí tienes algunos testimonios que reflejan la calidad y el
+                    impacto de nuestros servicios:
+                </p>
+                <div class="tes-empresa"
+                    style="display: flex; align-items: center; justify-content: center; margin-top: 3rem;">
+                    <img src="/img/logo.png" alt="logo" class="img-fluid" width="100" height="100">
+                    <p class="p-3">"La colaboración con One Infinity Code ha sido excepcional. Han superado
+                        nuestras expectativas en términos de calidad, tiempo de entrega y atención al cliente" <br>
+                        Empresa XYZ </p>
+                </div>
+                <div class="tes-empresa"
+                    style="display: flex; align-items: center; justify-content: center; margin-top: 3rem;">
+                    <p class="p-3">"El equipo de One Infinity Code comprendió perfectamente nuestras necesidades
+                        y nos brindó una solución personalizada que ha mejorado nuestra eficiencia operativa de
+                        manera significativa" <br>
+                        Empresa ABC </p>
+                    <img src="/img/logo.png" alt="logo" class="img-fluid" width="100" height="100">
+                </div>
+                <div class="tes-empresa"
+                    style="display: flex; align-items: center; justify-content: center; margin-top: 3rem;">
+                    <img src="/img/logo.png" alt="logo" class="img-fluid" width="100" height="100">
+                    <p class="p-3">"Recomendaría a One Infinity Code a cualquier empresa que busque soluciones
+                        tecnológicas de vanguardia. Su enfoque en la innovación y la calidad es impresionante" <br>
+                        Empresa 123 </p>
+                </div>
+                <p class="p-3">
+                    Estos testimonios son solo una muestra de la satisfacción de nuestros clientes. Trabajamos
+                    arduamente para garantizar la excelencia en cada proyecto y mantener relaciones
+                    comerciales sólidas y duraderas
+                </p>
+            </div>
+        </section>
+        <%- include ('partials/footer') %>
 </body>
+
 </html>

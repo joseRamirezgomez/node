@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%- include ('partials/head.ejs') %>
-    <title><%= title%></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- include ('partials/head.ejs') %>
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
+    <title>
+      <%= title%>
+    </title>
 </head>
+
 <body>
-    <%- include ('partials/navigation.ejs') %>
-    <div class="container vh-100 d-flex justify-content-center align-items-center">
-        <div class="card bg-dark text-white text-center">
-            <div class="card-header">
-                <h3>contact me</h3>
-            </div>
-            <div class="card-body text-start">
-                <form>
-                    <div class="mb-3">
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="Escribe tu email" class="form-control">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+  <%- include ('partials/navigation.ejs') %>
+    <section class="container-testimony"
+      style="display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 3rem;">
+      <div class="servtext" style="min-width: 70vh; max-width: 120vh; text-align: justify;">
+        <h2 class="display-1 d-flex justify-content-center" style="font-size: 3em;">Contacto</h2>
+        <p class="p-3">
+          Si deseas obtener más información sobre nuestros servicios o discutir tus
+          necesidades tecnológicas, no dudes en ponerte en contacto con nosotros. <br> Estamos aquí
+          para ayudarte en cada paso del camino. Puedes comunicarte con nosotros a través de
+          los siguientes medios:
+        </p>
+        <ul>
+          <li>Teléfono: +123 4567 8910</li>
+          <li>Correo electrónico: info@oneinfinitycode.com</li>
+          <li> Completa el formulario de contacto en nuestro sitio web para que nestro equipo se comunique contigo</li>
+        </ul>
+      </div>
+      <%- include ('partials/modal.ejs')%>
+
+    </section>
     <%- include ('partials/footer') %>
+    
 </body>
+
 </html>
