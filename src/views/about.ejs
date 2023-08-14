@@ -6,55 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include ('partials/head.ejs') %>
     <link rel="icon" href="/img/logo.png" type="image/x-icon">
-        <title>
-            <%=title%>
-        </title>
+    <title>
+        <%=title%>
+    </title>
 </head>
 
 <body>
     <%- include ('partials/navigation.ejs')%>
-        <main class="container vh-100 pt-2 text-center d-flex justify-content-center align-items-center" style="margin-top: 4rem;">
-            <section>
-                <h1 class="display-1 d-flex justify-content-center" style="margin-top: 5rem;">Quiénes somos</h1>
-                <p class="d-flex justify-content-center"
-                    style="min-width: 450px; max-width: 900px; text-align: justify;">
-                    Somos One Infinity Code, una empresa líder en soluciones tecnológicas innovadoras. Nuestro equipo
-                    está compuesto por expertos apasionados por la tecnología, comprometidos en ofrecer resultados
-                    excepcionales
-                    a nuestros clientes. Nos enfocamos en impulsar el crecimiento y la transformación digital de las
-                    empresas a través de soluciones personalizadas y vanguardistas. Con una combinación de experiencia y
-                    creatividad, estamos listos para ayudarte a alcanzar tus objetivos tecnológicos y destacar en un
-                    mundo digital en constante evolución.
-                </p>
-                <div class="container-text">
-                    <div class="mision" style="min-width: 70vh; max-width: 120vh; text-align: justify; display: flex; align-items: center; ">
-                        <p class="p-4">
-                            Nuestra misión es ofrecer soluciones tecnológicas innovadoras que impulsen el
-                            crecimiento y la transformación digital de nuestros clientes. Nos comprometemos
-                            a brindar productos y servicios de calidad que satisfagan las necesidades de manera efectiva
-                            y eficiente.
+    <main class="container-fluid pt-2 text-center" style="margin-top: 4rem;">
+        <section class="container">
+            <h1 class="display-1" style="margin-top: 5rem;">Quiénes somos</h1>
+            <p style="text-align: justify;">
+                Somos One Infinity Code, una empresa líder en soluciones tecnológicas innovadoras. Nuestro equipo
+                está compuesto por expertos apasionados por la tecnología, comprometidos en ofrecer resultados excepcionales
+                a nuestros clientes. Nos enfocamos en impulsar el crecimiento y la transformación digital de las empresas
+                a través de soluciones personalizadas y vanguardistas. Con una combinación de experiencia y creatividad,
+                estamos listos para ayudarte a alcanzar tus objetivos tecnológicos y destacar en un mundo digital en constante evolución.
+            </p>
+            <div class="container-text">
+                <div class="mision row">
+                    <div class="col-md-6">
+                        <h2 class="display-4">Misión</h2>
+                        <p>
+                            Nuestra misión es ofrecer soluciones tecnológicas innovadoras que impulsen el crecimiento y la
+                            transformación digital de nuestros clientes. Nos comprometemos a brindar productos y servicios de calidad
+                            que satisfagan las necesidades de manera efectiva y eficiente.
                         </p>
-                        <div class="visionimg" style="display: flex; flex-direction: column;">
-                            <h2 class="display-1 d-flex justify-content-center" style="font-size: 3em;">Misión</h2>
-                            <img src="img/mision.png" alt="" style="min-width: 100px; max-width: 400px;">
-                        </div>
                     </div>
-                    <div class="vision" style="min-width: 70vh; max-width: 120vh; text-align: justify;">
-                        <div class="misionimg p-4">
-                            <h2 class="display-1 d-flex justify-content-center" style="font-size: 3em;">Visión</h2>
-                            <img src="img/vision.png" alt="" style="min-width: 100px; max-width: 400px;">
-                        </div>
-                        <p class="text" style="margin-top: 5rem;">Ser reconocidos como líderes en el sector tecnológico, destacando por nuestra excelencia
-                            en la entrega de soluciones personalizadas y nuestra capacidad para adaptarnos y abrazar
-                            las últimas tendencias tecnológicas. Aspiramos a establecer relaciones duraderas con
-                            nuestros
-                            clientes, basadas en la confianza y el éxito mutuo.
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="img/mision.png" alt="" class="img-fluid" style="max-width: 300px;">
+                    </div>
+                </div>
+                <div class="vision row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="img/vision.png" alt="" class="img-fluid" style="max-width: 300px;">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="display-4">Visión</h2>
+                        <p>
+                            Ser reconocidos como líderes en el sector tecnológico, destacando por nuestra excelencia en la entrega de
+                            soluciones personalizadas y nuestra capacidad para adaptarnos y abrazar las últimas tendencias tecnológicas.
+                            Aspiramos a establecer relaciones duraderas con nuestros clientes, basadas en la confianza y el éxito mutuo.
                         </p>
                     </div>
                 </div>
-            </section>
-        </main>
-        <%- include ('partials/footer') %>
+            </div>
+        </section>
+    </main>
+    <%- include ('partials/footer') %>
 </body>
 
 </html>
