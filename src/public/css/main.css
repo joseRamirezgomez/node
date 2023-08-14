@@ -1,10 +1,7 @@
-body {
-    background: linear-gradient(
-        to top,
-        rgba(30, 35, 39, 0.915),
-        rgba(30, 35, 38, 0.903)
-      ),url(../img/fondo.png) no-repeat center center;
-      
+  /* Estilos de fondo y colores */
+  body {
+    background: linear-gradient(to top, rgba(30, 35, 39, 0.915), rgba(30, 35, 38, 0.903)),
+        url(../img/fondo.png) no-repeat center center;
     background-size: cover;
     color: white;
 }
@@ -16,26 +13,34 @@ footer {
     align-items: center;
     justify-content: center;
 }
-footer a{
+
+/* Enlaces en el footer */
+footer a {
     color: white;
     text-decoration: none;
 }
-.card{
+
+/* Tarjetas estilo */
+.card {
     color: white;
     background: linear-gradient(rgba(24, 23, 23, 0.377), rgba(56, 54, 54, 0.354));
 }
 
-.mision, .vision {
+/* Estilos para mision y vision */
+.mision,
+.vision {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Estilos para imágenes en el carrusel */
 .carousel-item img {
     height: 500px;
-    
 }
-.carousel-item a{
+
+/* Enlaces en el carrusel */
+.carousel-item a {
     text-decoration: none;
     color: white;
     background: linear-gradient(rgba(29, 28, 28, 0.673), rgba(44, 42, 42, 0.468));
@@ -44,21 +49,26 @@ footer a{
     text-align: center;
     border-radius: 15px;
 }
+
+/* Estilos para menú desplegable */
 .dropdown-menu li.drp a {
     color: white;
 }
 
 .dropdown-menu li.drp a:hover {
-    background-color: #333; 
+    background-color: #333;
 }
 
 .dropdown-menu li.drp a:focus {
     background-color: #555;
 }
-.container-port li{
+
+/* Estilos para la lista en el portafolio */
+.container-port li {
     margin-top: 10px;
 }
-/*diseño contacto*/
+
+/* Estilos para el formulario de contacto */
 .container-form {
     background: rgba(186, 186, 187, 0.149);
     border-radius: 15px;
@@ -70,7 +80,8 @@ footer a{
     margin-top: 3rem;
 }
 
-.container-form .form-control , .container-form .form-control:focus{
+.container-form .form-control,
+.container-form .form-control:focus {
     background: rgba(186, 186, 187, 0.149);
     color: white;
 }
@@ -79,7 +90,8 @@ footer a{
     width: 250px;
     height: 400px;
 }
-/*diseño modal*/
+
+/* Estilos para el contenido del modal */
 .modal-content {
     background: linear-gradient(rgba(29, 28, 28, 0.898), rgba(44, 42, 42, 0.881));
     color: white;

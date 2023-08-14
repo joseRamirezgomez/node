@@ -6,42 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include ('partials/head.ejs') %>
     <link rel="icon" href="/img/logo.png" type="image/x-icon">
-        <title>
-            <%=title%>
-        </title>
+    <title><%=title%></title>
 </head>
 
 <body>
     <%- include ('partials/navigation.ejs')%>
-        <section class="container-port"
-            style="display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 3rem;">
-            <div class="servtext" style="min-width: 70vh; max-width: 120vh; text-align: justify;">
-                <h2 class="display-1 d-flex justify-content-center" style="font-size: 3em;">Portafolio de proyectos</h2>
-                <p class="p-3">
-                    Nuestro portafolio de proyectos muestra nuestra experiencia y
-                    el impacto que hemos tenido en diversas industrias. Hemos trabajado con empresas de
-                    diferentes tamaños y sectores, brindándoles soluciones tecnológicas a medida que han
-                    mejorado su eficiencia operativa y su presencia en línea. Estos son algunos de nuestros
-                    proyectos destacados:
-                </p>
-                <ul>
-                    <li>Proyecto A: Desarrollo de una plataforma de comercio electrónico escalable para una
-                        empresa minorista líder.</li>
-                    <li>Proyecto B: Diseño y desarrollo de una aplicación móvil de reserva de citas para una
-                        clínica médica.</li>
-                    <li>Proyecto C: Implementación de un sistema de gestión de inventario personalizado para
-                        una cadena de distribución.</li>
-                    <li>Proyecto D: Diseño y desarrollo de un sitio web interactivo para una agencia de
-                        marketing digital.</li>
-                </ul>
-                <p class="p-3">
-                    Estos proyectos son solo ejemplos de nuestro trabajo. Estamos listos para abordar nuevos 
-                    desafíos y encontrar soluciones innovadoras para tu empresa.
-                </p>
+    <section class="container-port" style="margin-top: 3rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="servtext text-center">
+                        <h2 class="display-1" style="font-size: 3em;">Portafolio de proyectos</h2>
+                        <p class="p-3" style="text-align: justify;">
+                            Nuestro portafolio de proyectos muestra nuestra experiencia y el impacto que hemos tenido
+                            en
+                            diversas industrias. Hemos trabajado con empresas de diferentes tamaños y sectores,
+                            brindándoles soluciones tecnológicas a medida que han mejorado su eficiencia operativa y su
+                            presencia en línea. Estos son algunos de nuestros proyectos destacados:
+                        </p>
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li>Proyecto A: Desarrollo de una plataforma de comercio electrónico escalable para una
+                                empresa minorista líder.</li>
+                            <li>Proyecto B: Diseño y desarrollo de una aplicación móvil de reserva de citas para una
+                                clínica médica.</li>
+                            <li>Proyecto C: Implementación de un sistema de gestión de inventario personalizado para
+                                una cadena de distribución.</li>
+                            <li>Proyecto D: Diseño y desarrollo de un sitio web interactivo para una agencia de
+                                marketing digital.</li>
+                        </ul>
+                        <p class="p-3" style="text-align: justify;">
+                            Estos proyectos son solo ejemplos de nuestro trabajo. Estamos listos para abordar nuevos
+                            desafíos y encontrar soluciones innovadoras para tu empresa.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </section>
-        <%- include ('partials/footer.ejs')%>
-
+        </div>
+    </section>
+    <%- include ('partials/footer.ejs')%>
 </body>
 
 </html>
