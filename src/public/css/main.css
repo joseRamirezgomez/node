@@ -104,9 +104,15 @@ footer a {
     bottom: 40px;
     left: 0;
     right: 0;
-    text-align: center;
     padding: 5px 0;
-
+    text-align: justify;
+    
+}
+.carousel-item {
+    font-size: 10px;
+}
+.carousel-item a {
+    width: 50%;
 }
 
 .servtext {
