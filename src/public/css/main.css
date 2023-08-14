@@ -96,3 +96,20 @@ footer a {
     background: linear-gradient(rgba(29, 28, 28, 0.898), rgba(44, 42, 42, 0.881));
     color: white;
 }
+
+.carousel-caption-link{
+    background: linear-gradient(rgba(29, 28, 28, 0.802), rgba(44, 42, 42, 0.881));
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 5px 0;
+
+}
+
+.servtext {
+    max-width: 800px; /* Ajusta este valor según tus preferencias */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
