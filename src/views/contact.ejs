@@ -13,8 +13,8 @@
 
 <body>
   <%- include ('partials/navigation.ejs') %>
-  <section class="container-testimony text-center p-3">
-    <div class="servtext">
+  <section class="container-testimony text-center p-3 ">
+    <div class="servtext d-flex justify-content-center align-items-center vh-100" style="flex-direction: column;">
       <h2 class="display-4">Contacto</h2>
       <p>
         Si deseas obtener más información sobre nuestros servicios o discutir tus necesidades tecnológicas, no dudes en
@@ -26,8 +26,9 @@
         <li>Correo electrónico: info@oneinfinitycode.com</li>
         <li>Completa el formulario de contacto en nuestro sitio web para que nuestro equipo se comunique contigo</li>
       </ul>
+      <%- include ('partials/modal.ejs')%>
     </div>
-    <%- include ('partials/modal.ejs')%>
+
   </section>
   <%- include ('partials/footer') %>
 </body>
